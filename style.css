@@ -1,0 +1,209 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #b3e0ff, #e6e6e6);
+  padding: 10px 20px;
+  color: black;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  display: flex;
+}
+
+.navbar-link {
+  margin: 0 20px;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #0099ff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.cart-icon,
+.profile-icon,
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Style Home Page */
+.home {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.home img {
+  max-width: 50%;
+  height: auto;
+}
+
+.home-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 10px 10px;
+  }
+
+  .navbar-link {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navbar-center {
+    justify-content: center;
+  }
+
+  .search-bar {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search-bar {
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .search-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cart-icon,
+  .profile-icon,
+  .menu-icon {
+    width: 26px;
+    height: 26px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-bar {
+    padding: 3px;
+  }
+
+  .search-bar input {
+    width: 120px;
+  }
+
+  .search-icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .cart-icon,
+  .profile-icon,
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+  }
+}
